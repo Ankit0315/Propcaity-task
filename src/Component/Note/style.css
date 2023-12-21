@@ -1,0 +1,175 @@
+li {
+  list-style: none;
+}
+body {
+  background-color: rgb(255, 255, 255);
+  color: white;
+}
+.note-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.note-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+textarea {
+  width: 100%;
+  background-color: grey;
+  border: none;
+  outline: none;
+  margin-top: 6px;
+}
+/* ............................................. */
+
+.box {
+  color: black;
+  border: 1px solid #121111;
+  padding: 8px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: fit-content;
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+.boxes {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #8b0c0c !important;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+
+  height: auto;
+  color: black;
+}
+
+.card h3 {
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    padding: 10px;
+  }
+}
+
+/* ,........................................................... */
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: rgb(93 91 91);
+  border-radius: 2px;
+  width: 100%;
+  align-items: baseline;
+  border: 1px solid rgb(209, 209, 209);
+  font-size: 20px;
+}
+
+.nav span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+input[type="search"] {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  width: 400px;
+  background-color: rgb(225, 222, 222);
+  
+}
+@media screen and (max-width: 600px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  input[type="search"] {
+    width: 100%; 
+    margin-top: 10px;
+  }
+}
+
+/* ........................................... */
+.note-form {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin: 20px;
+  max-width: 400px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.note-form input,
+.note-form textarea {
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background: transparent;
+  outline: none;
+  border: none;
+  color: rgb(6, 5, 5);
+}
+
+@media screen and (max-width: 600px) {
+  .note-form {
+    margin: 10px;
+  }
+}
+textarea {
+  height: 10rem;
+}
+
+.box-inpt,
+input,
+textarea {
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background: transparent;
+  outline: none;
+  border: none;
+  color: rgb(6, 5, 5);
+}
+button {
+  width: 100px;
+  border-radius: 5px;
+  background-color: white;
+}
